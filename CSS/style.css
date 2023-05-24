@@ -1,0 +1,268 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+.main-container {
+    width: 100%;
+    max-width: px;
+    box-sizing: border-box;
+}
+.card img {
+    object-fit: cover;
+}
+
+.style-liens {
+    text-decoration: none;
+    color: black;
+}
+
+/*******header*********/
+
+.logo-cliquable {
+display: flex;
+justify-content: center;
+}
+
+.style-formulaire {
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    height: 50px;
+}
+form {
+    background-color: #eaeaea;
+}
+input{
+    outline: none !important;
+    border: none;
+    background-color: #eaeaea;
+}
+ ::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 30px 15px 5px;
+ }
+
+.fa-location-dot {
+    color: gray;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.menu .reservation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    
+}
+.menu .selection {
+  
+    font-weight: 300;
+    font-size: 18px
+}
+
+.menu .bouton-explorer {
+    display: flex;
+    justify-content: center;
+    border-radius: 60px;
+    box-sizing: border-box;
+    border:none solid 1px;
+    background-image:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px;
+    width: 218px;
+    padding: 3px 1px;
+    
+}
+
+.menu .bouton-explorer p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+/******fonctionnement*****/
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+}
+
+.fonctionnement-etapes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  
+}
+.choix, .compo, .surplace {
+    display: flex;
+    justify-content: space-around;
+    border: none 1px solid;
+    border-radius: 30px;
+    width: 80%;
+    justify-content: center;
+    padding: 10px 5px;
+    box-shadow: 0px 4px 10px; 
+   
+}
+
+
+/*****restaurants*****/
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 35px;  
+}
+
+.restaurants-title { 
+    display: flex;
+    justify-content: ;
+        
+}
+
+.restaurants .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items:center;
+}
+
+.restaurants .cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px; 
+    margin-bottom: 7px;
+    height: auto;
+    position: relative;   
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  }
+
+.restaurants .cards .card .cardImage {
+    height: 190px;  
+}
+  
+.restaurants .cards .card .cardImage img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;    
+}
+
+.badgeNew {
+    display: flex;
+    position: absolute;
+    background: #99E2D0;
+    border: none;
+    color: #008766;
+    margin: 10px 3px 280px 280px ;
+}
+
+.restaurants .cards .card .card-content {
+display: flex;
+}
+
+.fa-heart {
+    background-image:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
+/*******foctionnemment*****/
+.use-title {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 24px;
+}
+
+/*******footer******/
+footer{
+    display: flex;
+    background-color: #353535;
+    padding: 30px;
+}
+
+.lien-footer {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 0px 20px 20px 0px;  
+    gap: 7px;    
+}
+
+footer .style-liens{
+    display: flex;
+    align-items: stretch;
+    color: #fff;
+    gap: 10px;
+}
+
+/*****tablette************/
+@media (min-width: 1024px) {
+
+    .restaurants{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .restaurants .cards {
+        flex-direction: row;
+    }
+    .restaurants .cards .card { 
+        width: 45%;
+    }
+    .restaurants-title{
+        flex-direction: column;   
+    }
+    /*****fonctionnement******/
+    .fonctionnement-etapes {
+        display: flex;
+        flex-direction: row;    
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .lien-footer {
+        flex-direction: row;
+    }
+    .menu .bouton-explorer {
+        width: 218px;
+          
+    }
+
+}
+
+
+/******destock***********/
+@media (min-width: 1440px) {
+
+    .restaurants .cards {
+        flex-direction: row;
+    }
+
+}
